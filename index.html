@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Backbone.js Snacks frontend</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="products"></div>
+        <script id ="productTemplate" type="text/template">
+            <ul id="info">
+                <li class="name"><%= name %></li>
+                <li>Pirce: $<%= price %></li>
+                <li>Stock: <%= stock %></li>
+            </ul>
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+        <script src="js/models/product.js"></script>
+        <script src="js/collections/snacks.js"></script>
+        <script src="js/views/product.js"></script>
+        <script src="js/views/snacks.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
